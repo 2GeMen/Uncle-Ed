@@ -1,0 +1,13 @@
+diff --git a/libretro/LibretroGraphicsContext.cpp b/libretro/LibretroGraphicsContext.cpp
+index 26592b9..02346f3 100644
+--- a/libretro/LibretroGraphicsContext.cpp
++++ b/libretro/LibretroGraphicsContext.cpp
+@@ -20,7 +20,7 @@ extern "C" {
+ 
+ void retro_set_video_refresh(retro_video_refresh_t cb) { LibretroGraphicsContext::video_cb = cb; }
+ static void context_reset() { ((LibretroHWRenderContext *)Libretro::ctx)->ContextReset(); }
+-static void context_destroy() { ((LibretroHWRenderContext *)Libretro::ctx)->ContextDestroy(); }
++static void context_destroy() { if (Libretro::ctx) ((LibretroHWRenderContext *)Libretro::ctx)->ContextDestroy(); }
+ 
+ bool LibretroHWRenderContext::InitHW(bool cache_context) {
+ 	hw_render_.cache_context = cache_context;

@@ -1,0 +1,10 @@
+{
+  "status": "development-not-for-public-release",
+  "source_license_approved": true,
+  "assets_approved": false,
+  "core_corresponding_source_verified": false,
+  "android_phone_validated": false,
+  "android_tablet_validated": false,
+  "apple_builds_validated": false,
+  "signing_ready": false
+}

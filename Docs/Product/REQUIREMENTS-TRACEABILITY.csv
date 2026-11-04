@@ -1,0 +1,80 @@
+﻿需求ID,实施阶段,需求,验收条件,基准来源,Android状态,实际证据
+BASE-01,0,以当前 iOS 体验为基准,不把技术原型或历史缺陷当作产品设计,用户最近反馈；产品需求总纲,已整理，持续核对,
+BASE-02,0,冻结源码、资源和参数,有可追踪哈希且不复制未批准的图片,用户最近反馈；产品需求总纲,已整理，持续核对,
+BASE-03,0,区分已实现和已验收,Apple 结果不自动算作 Android；每项带平台/版本/证据,用户最近反馈；产品需求总纲,已整理，持续核对,
+BRAND-01,1,原 Uncle Ed 图标与名称,launcher/最近任务/启动页不用系统示例图标；人物不裁切,Assets/Branding；GameViewController；SpatialCanvas,原图标接入构建；启动器实际样式待验收,
+BRAND-02,1,暗绿、米白、金色视觉,与 iOS 同场景对照，不使用大块系统灰按钮,Assets/Branding；GameViewController；SpatialCanvas,通用灰按钮已移除；整体视觉待验收,
+BRAND-03,1,原机品牌与经典 Logo,集中聚焦项；等比、完整、无错字,Assets/Branding；GameViewController；SpatialCanvas,原机型 Logo 已接入；待逐款核对,
+BRAND-04,1,原光照、正交相机和占幅,相同安全区下模型比例、中心、高光可对照,Assets/Branding；GameViewController；SpatialCanvas,原光照随模型居中/尺度换算；OPPO20主题60姿态核查；另有Mac SceneKit60参考，非iOS整页配对,ANDROID-OPTIMIZATION-CLOSEOUT-2026-10-29.zh-CN.md
+BRAND-05,1,全屏聚光、微粒和窄实体轮廓,无矩形裁边/椭圆台座/白色轮廓占位,Assets/Branding；GameViewController；SpatialCanvas,GBA黄色16姿态实体轮廓及显示帧同步已验证；其他主题/整体视觉待验收,
+GEOM-01,1/2,参数化曲面真实转换,圆柱、球面、圆环、倒角不能导成代理方块,SpatialMachine；Physical-References；Structure-Audit,待迁移/未验收,
+GEOM-02,1/2,贴图/文字/透明度和色彩,NSData 图像可解码，方向正确，字形不拉伸或遮挡,SpatialMachine；Physical-References；Structure-Audit,零顶点SCNShape遗漏已修；GBA黑屏框和部分按键槽恢复，33包重导；跨端细节待验收,ANDROID-CLOSEOUT-2026-10-29.zh-CN.md
+GEOM-03,1/2,材质分层,漆面、塑料、金属、半透磨砂分别表现,SpatialMachine；Physical-References；Structure-Audit,保留颜色/粗糙度/金属/法线；20主题60姿态实机GPU检查；部分高光/完整跨端整页仍待验收,ANDROID-OPTIMIZATION-CLOSEOUT-2026-10-29.zh-CN.md
+GEOM-04,1/2,旋转净空,大角度不切边；无透明留白导致的错误拟合,SpatialMachine；Physical-References；Structure-Audit,待迁移/未验收,
+GEOM-05,1/2,保持原厚度结构,不整壳等厚挤出，不全局压 Z 破坏槽口和按键,SpatialMachine；Physical-References；Structure-Audit,待迁移/未验收,
+GEOM-06,1/2,限定图案,与原图一致的丝印/浅蚀刻，无透明矩形反光,SpatialMachine；Physical-References；Structure-Audit,待迁移/未验收,
+HOME-01,2,原机型范围与默认主题,手机三款；平板五款浏览；各款记住最近主题,GameViewController.showHome；SpatialPreview,手机三款/平板五款已实现；平板五首页回归通过，整页待对照验收,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+HOME-02,2,邻居线索和焦点滚轮,可见相邻机型；通过材质压暗，不用根透明,GameViewController.showHome；SpatialPreview,待迁移/未验收,
+HOME-03,2,轻摆与松手回正,同 iOS 节奏，有生命感且不晃乱,GameViewController.showHome；SpatialPreview,待迁移/未验收,
+HOME-04,2,横滑与把玩手势,一手势最多相邻一项；长按/双指可旋转；不误确认,GameViewController.showHome；SpatialPreview,OPPO慢滑/邻居点选/快速目标/长按回正通过；同实体接续中心差0px/尺度约3e-8；整页视觉未关闭,ANDROID-CLOSEOUT-2026-10-29.zh-CN.md
+HOME-05,2,分页控件,点中目标页；持续拖动；单项隐藏,GameViewController.showHome；SpatialPreview,分页点选/拖动/无障碍已接入；完整交互待验收,
+HOME-06,2,工具栏和导入,轻量原样式；触区够大；不覆盖实体或错误吸收点击,GameViewController.showHome；SpatialPreview,待迁移/未验收,
+THEME-01,2,一台主体预览,左右滑主题并保留邻居，不改缩略图网格,DeviceModel.themes；GameViewController.showThemes,相邻实体并列连续拖动/吸附；OPPO三机型四主题、同实体不重载不淡出通过,ANDROID-FRONTEND-PARITY-2026-10-29.zh-CN.md
+THEME-02,2,同机型尺度连续,首页进入主题大小不变，淡入无白闪,DeviceModel.themes；GameViewController.showThemes,实体边界排除透明画布；同机型主题外框一致；OPPO首页/主题同尺度及呈现接续通过,ANDROID-CLOSEOUT-2026-10-29.zh-CN.md
+THEME-03,2,顶部主题名称,位于机型名下，完整且不与模型重叠,DeviceModel.themes；GameViewController.showThemes,顶部主题名和中文名称已接入；待截图验收,
+THEME-04,2,既定四主题,GBA 四款及其他机型四款按确定顺序保留,DeviceModel.themes；GameViewController.showThemes,20主题已重导和轮廓重生成；最终软件平板正反核对；完整iOS材质对照待验收,ANDROID-CLOSEOUT-2026-10-29.zh-CN.md
+THEME-05,2,缓存与滚动,不在 layout/滚动主线程同步生成轮廓快照,DeviceModel.themes；GameViewController.showThemes,有界相邻实体；资源预算按接续分段，终点呈现等待适配慢GPU；最终OPPO连续主题通过,ANDROID-OPTIMIZATION-CLOSEOUT-2026-10-29.zh-CN.md
+MODEL-01,2/6,GBA 流线/后板/厚度,连续收薄滚边，电池仓局部隆起，左右后板统一配色,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MODEL-02,2/6,GBA 肩键接合,曲面键帽、座体、让位槽贴合，不能悬浮,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MODEL-03,2/6,GBA 文字与侧边细节,Logo 不拉伸，标签不压在结构下；AA/EXT/耳机/电源真实,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MODEL-04,2/6,PSP 肩键与单侧环扣,后上缘包角；前左下仅一个金属环扣,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MODEL-05,2/6,PSP 后壳和 UMD 仓,握把弧面、薄后壳、同色背板、独立仓盖/导架/读头,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MODEL-06,2/6,PSP 面板排版,SONY/限定字完整；底部功能键居中；右侧键不压 LCD,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MODEL-07,2/6,PSP 摇杆实体,插座、轴体、帽沿、颗粒面，方向位移/倾向/回中,用户真机图；SpatialMachine；Structure-Audit,四主题颗粒顶盖单网格；SceneKit摇杆矩阵恢复；最终OPPO控件回归通过,ANDROID-OPTIMIZATION-CLOSEOUT-2026-10-29.zh-CN.md
+MODEL-08,2/6,GBC 卡槽与实体,本机插卡齐平，无 L/R，背盖/侧开关/接口正确,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MODEL-09,2/6,NDS/3DS 上盖,LCD 金属背板、双扬声器、排线/相机正确，闭盖不穿模,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MODEL-10,2/6,侧边接口及标签,按各真实型号分派，不虚构 USB/重复端口,用户真机图；SpatialMachine；Structure-Audit,待迁移/未验收,
+MEDIA-01,3,独立媒体页,没有叠放机身，按机型过滤游戏,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,手机独立选卡+最多两邻居；GBA/GBC/PSP连续拖动升格真机通过；整页未验收,ANDROID-MEDIA-CAROUSEL-2026-10-28.zh-CN.md
+MEDIA-02,3,真实卡带/UMD,正反/侧面/PCB/触点/保护壳完整，可把玩,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,三种手机媒体可长按旋转并回正；UMD圆形卡贴遮罩已修；背面完整结构/读盘材质待验收,ANDROID-MEDIA-CAROUSEL-2026-10-28.zh-CN.md
+MEDIA-03,3,适当浏览尺寸,平板不显得过小，比例正确，装载时连续缩回真实尺寸,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,手机约束已实现；OPPO GBA/GBC尺寸截图核对；平板与装载连续缩放未验收,ANDROID-GAME-RESOURCES-2026-10-28.zh-CN.md
+MEDIA-04,3,紧凑完整资料,标题换行；四项资料贴近；无截断或大块空隙,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,OPPO火红/绿宝石/银紧凑标题和四项资料已核对；更多长标题待验收,ANDROID-GAME-RESOURCES-2026-10-28.zh-CN.md
+MEDIA-05,3,封面与卡贴,优先适合卡贴；回退裁剪铺满，禁止中间小缩略图,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,24款实际游戏封面缓存；GBA铺满回退与顶部标题最终截图核对通过,ANDROID-GAME-RESOURCES-2026-10-28.zh-CN.md
+MEDIA-06,3,消光印刷与卡壳颜色,无泛白/洗灰/过曝，不篡改主色缓存,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,红绿蓝主色/邻居材质压暗逐实例核对；消光UMD圆形印刷通过；平板与其他媒体待验收,ANDROID-MEDIA-CAROUSEL-2026-10-28.zh-CN.md
+MEDIA-07,3,焦点拿起感,轻摆、抬升和确认起点连续，不点击后下落跳变,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,连续拖动/不重载升格/反向复用已验证；焦点抬升和插入起点仍待实现,ANDROID-MEDIA-CAROUSEL-2026-10-28.zh-CN.md
+MEDIA-08,3,游戏资料匹配,按机型/地区/别名；离线缓存；缺失显示斜线,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,在线新查询和离线零请求通过；别名/地区/版本单测通过,ANDROID-GAME-RESOURCES-2026-10-28.zh-CN.md
+MEDIA-09,3,评分与日期可信,本平台媒体分；不借其他平台/正式版；标明日期口径,CartridgeView；CoverLoader；GameCatalog；ROMLibrary,本平台媒体分解析及错平台/用户分/试玩拒绝测试通过；日期标注口径,ANDROID-GAME-RESOURCES-2026-10-28.zh-CN.md
+IMPORT-01,3,系统文件选择器,文件/ZIP、多选、取消、权限失效都有结果,ROMLibrary；Domain；用户资料查询授权,待迁移/未验收,
+IMPORT-02,3,内容哈希去重,重命名和 ZIP 中同一 ROM 识别为重复,ROMLibrary；Domain；用户资料查询授权,待迁移/未验收,
+IMPORT-03,3,原文件名与地区保存,哈希文件名不破坏自动封面和资料查询,ROMLibrary；Domain；用户资料查询授权,原文件名保留并用于24款实际游戏资源匹配；任意改名文件待补匹配策略,ANDROID-GAME-RESOURCES-2026-10-28.zh-CN.md
+IMPORT-04,3,ZIP 安全与限制,拒绝越界/损坏/超限/空文件；最多100个ROM,ROMLibrary；Domain；用户资料查询授权,待迁移/未验收,
+IMPORT-05,3,后台封面和资料,不堵塞页面/开机；失败可恢复；不上传 ROM 或存档,ROMLibrary；Domain；用户资料查询授权,导入/启动后异步匹配与缓存已实现；用户已授权联网；新游戏实时查询通过,ANDROID-GAME-RESOURCES-2026-10-28.zh-CN.md
+IMPORT-06,3,用户数据保留,更新不删除游戏库、封面自定义和存档,ROMLibrary；Domain；用户资料查询授权,多次保留数据安装；正式存档目录336文件前后哈希一致；自定义资源全覆盖待核对,ANDROID-CLOSEOUT-2026-10-29.zh-CN.md
+LOAD-01,4,拿起/转向/对槽/插入,起点和缩放连续，先安全转向再插入，不穿壳,PickerMotion.MediaLoadingMotion；SpatialCanvas；SpatialMachine,共享装载运动已迁移；模拟器关键帧与真机流程通过，完整路径视觉待验收,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+LOAD-02,4,卡带落座,GBC 顶部齐平；GBA 独立短卡高度,PickerMotion.MediaLoadingMotion；SpatialCanvas；SpatialMachine,GBC齐平落座已实现；真机启动通过，最终侧面视觉待验收,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+LOAD-03,4,完整 UMD,保护壳装入，仅内部薄盘片旋转,PickerMotion.MediaLoadingMotion；SpatialCanvas；SpatialMachine,完整UMD与内部盘片分离；模拟器关键帧通过，完整动画待验收,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+LOAD-04,4,PSP 四阶段,开仓/入架/合盖/读盘按共享2.95s时序,PickerMotion.MediaLoadingMotion；SpatialCanvas；SpatialMachine,待迁移/未验收,
+LOAD-05,4,仓盖与读头净空,向外打开，全路径在正确侧，无穿越盖板,PickerMotion.MediaLoadingMotion；SpatialCanvas；SpatialMachine,待迁移/未验收,
+LOAD-06,4,装载声音/触感,阶段同步，每轮一次，取消清理,PickerMotion.MediaLoadingMotion；SpatialCanvas；SpatialMachine,阶段音效去重/取消已接入；实际听感及触感待验收,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+LOAD-07,4,合盖开机,NDS/3DS 合盖开始，装卡后开盖；PSP 合仓后翻正,PickerMotion.MediaLoadingMotion；SpatialCanvas；SpatialMachine,待迁移/未验收,
+PLAY-01,5/6,原画面比例和屏框,LCD 不拉伸，触控映射与显示一致,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,独立LCD显示RGB通道、最近邻；五机型98处色值通过；NDS原创下屏触控通过；完整视觉待验收,ANDROID-COLOR-SHELF-HAPTICS-2026-10-28.zh-CN.md
+PLAY-02,5/6,直接实体肩键,PSP/GBA无虚拟L/R；NDS/3DS保留；GBC没有,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,GBA/PSP实体肩键投影命中与按压释放通过；NDS/3DS辅助键保留,ANDROID-COLOR-SHELF-HAPTICS-2026-10-28.zh-CN.md
+PLAY-03,5/6,所有物理键立体按压,可见位移/倾斜、键槽和约75ms回弹,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,按键轴向下压/肩键转轴/约75ms回弹；OPPO31及软件平板54控件通过；人工触感待验收,ANDROID-COLOR-SHELF-HAPTICS-2026-10-28.zh-CN.md
+PLAY-04,5/6,十字键机械规则,一体十字归一化/相反抵消；PSP分瓣,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,一体十字键倾斜、相反抵消/斜向归一；PSP分瓣；控件探针通过,ANDROID-COLOR-SHELF-HAPTICS-2026-10-28.zh-CN.md
+PLAY-05,5/6,摇杆方向与多点输入,方向摆动；单指松开不释放其他指；取消全部释放,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,OPPO实体控件/肩键/摇杆通过；实际后台和音频焦点中断后恢复通过,ANDROID-OPTIMIZATION-CLOSEOUT-2026-10-29.zh-CN.md
+PLAY-06,5/6,左上菜单与滑出提示,安全区内，无方向键冲突；游戏时无导入按钮遮挡,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,左上抽屉/滑出已实现；平板原创程序暂停写SRAM并返回通过,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+PLAY-07,5/6,暂停/继续/换卡/切机,不残留输入，不双重音轨，旧会话保存再停止,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,GTA实际室外场景后台/返回与瞬时音频焦点中断恢复通过；FireRed/GBC实际重开通过；耳机路由等仍待核对,ANDROID-PHONE-SAVE-PLAY-2026-10-29.zh-CN.md
+PLAY-08,5/6,手机 GBC 方向过渡,确认卡后转竖屏，固定轴，GBA/PSP横屏,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,待迁移/未验收,
+PLAY-09,5/6,双屏与 NDS 书本,NDS下屏、3DS居中320x240触控；3DS不套书本模式,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,NDS书本与切回、实际呈现终点、下屏中心/边角及右方向原创程序模拟器通过；3DS无书本入口，商业玩法待验收,ANDROID-OPPO-BOOK-RESOURCE-2026-10-28.zh-CN.md
+PLAY-10,5/6,显示位置和比例,模型/画面/命中同步缩放偏移且限制可视范围,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,待迁移/未验收,
+PLAY-11,5/6,保存与继续,分开核实 SRAM/RTC/核心文件、重载内容、实际游戏内保存,MachineCanvas；MechanicalKeys；EmulationSession；DeviceLayout,FireRed/GBC实际SAVE与CONTINUE通过；新版GBC故障提示/旧档保护/恢复保存和正常重载真机通过；RTC跨日显示已观察；PSP游戏进度档未生成，仍待验收,ANDROID-SAVE-PROTECTION-2026-10-30.zh-CN.md
+PERF-01,5/6,GTA 片头音乐,真实游戏连贯播放，无音频断续；不是只计核心帧,用户卡顿反馈；PSP-Performance；Model-Controls-Performance,GTA约9分40秒覆盖片头与初始室外步行/驾驶/中断恢复，欠载0；完整城市高交通与长时听感仍待验收,ANDROID-PHONE-SAVE-PLAY-2026-10-29.zh-CN.md
+PERF-02,5/6,战神与持续游玩,高负载动画/战斗与城市场景长期实测,用户卡顿反馈；PSP-Performance；Model-Controls-Performance,战神旧337秒样本欠载0；最新Easy开场到教学/短时战斗41339帧欠载2（frame8520/8521、约141.9秒），Native56.948ms/视频0.121ms，仍需核心定位；GTA约9分40秒欠载0；完整负载未关闭,ANDROID-SAVE-PROTECTION-2026-10-30.zh-CN.md
+PERF-03,5/6,不牺牲既有画质,先优化线程/同步/缓存/绘制；需画质取舍时再请用户决策,用户卡顿反馈；PSP-Performance；Model-Controls-Performance,LCD与壳体灯光分离；未降低几何质量；完整性能验收待完成,ANDROID-COLOR-SHELF-HAPTICS-2026-10-28.zh-CN.md
+PERF-04,5/6,分离性能指标,UI、核心推进、游戏帧、长帧、欠载、热/内存分别记录,用户卡顿反馈；PSP-Performance；Model-Controls-Performance,已分离实际呈现/核心/音频/暂停指标；GTA三分钟对照呈现54.39→60.45fps，偶发停顿仍待解决,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+PERF-05,5/6,隐藏页停渲染/有界缓存,无离屏GPU任务堆积；重复帧不无条件拷贝,用户卡顿反馈；PSP-Performance；Model-Controls-Performance,待迁移/未验收,
+PERF-06,5/6,生命周期与音频中断,后台/耳机/返回/切屏/失败恢复，无粘键、卡死、丢档,用户卡顿反馈；PSP-Performance；Model-Controls-Performance,GTA真机后台/瞬时音频焦点中断时暂停，返回同场景恢复，无粘键；耳机路由/断开与系统窗口场景仍待,ANDROID-PHONE-SAVE-PLAY-2026-10-29.zh-CN.md
+RELEASE-01,6,Android 平板适配,模拟器五机型与单双屏/多窗，实体未测明确标注,用户2026-10-27确认；DISTRIBUTION；THIRD_PARTY_NOTICES,最终软件平板五机型20主题正反已核对；原创NDS书本/触控既有验证；实体平板和系统分屏未验收,ANDROID-CLOSEOUT-2026-10-29.zh-CN.md
+RELEASE-02,6,干净 GitHub 源码,Uncle-Ed，不推送私用旧历史，不含ROM/存档/密钥,用户2026-10-27确认；DISTRIBUTION；THIRD_PARTY_NOTICES,干净源码暂存与5项审计通过；未建公开仓库/推送,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+RELEASE-03,6,GPL 与对应源码,自有GPL-3.0-or-later；保留实际依赖许可及固定核心源码/构建记录,用户2026-10-27确认；DISTRIBUTION；THIRD_PARTY_NOTICES,许可/固定PPSSPP与NDS源码构建和补丁已记录；完整对应源码归档待审,ANDROID-RUNTIME-AND-TABLET-2026-10-28.zh-CN.md
+RELEASE-04,6,私用外观与公开素材,不擅自中性替换；未经批准不公开限定纹样和商业封面,用户2026-10-27确认；DISTRIBUTION；THIRD_PARTY_NOTICES,待迁移/未验收,
+RELEASE-05,6,各系统真正 release,匹配ABI和签名，安装/存档/性能/能力说明有实证,用户2026-10-27确认；DISTRIBUTION；THIRD_PARTY_NOTICES,待迁移/未验收,

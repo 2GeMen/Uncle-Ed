@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "frozen_on": "2026-10-27",
+  "authority": "Latest user requirements override historical defects; this snapshot is an implementation reference, not Android acceptance.",
+  "ios_revision": "263ec91ab815da4e6c0efd336128db113df2d2bc",
+  "mac_revision": "878169d242d6f16d7d3dbbe735f2cbb976455d06",
+  "sources": {
+    "Mobile/Sources/App/GameViewController.swift": "df91863ee77bc278b752f8ba6233a8c6d26fd8de0e9b9e93ca4d5a5a4c5802c0",
+    "Mobile/Sources/App/MachineCanvas.swift": "d644b2c93df1774321e5d6b965003683ebfbc25ee21d533321d4dafe6f884a19",
+    "Mobile/Sources/App/MechanicalKeys.swift": "90e878a24b94bf04cc2c3c73aad250ecb5aec13ecf20c54cb11d85822a8c2be9",
+    "Mobile/Sources/App/CoverLoader.swift": "f7afd94a8fe284362baf2bf266f756ba064f3c766a2d06f270bbb799e9487316",
+    "Mobile/Sources/App/EmulationSession.swift": "6a333c8e270eb2d06ee902c6cabac60b923b4cc18e8026dd53c681c39538d546",
+    "Mobile/Sources/Rendering/SpatialCanvas.swift": "116950793e08adc16584fb2743d77b07b68ac9dd067d06e33617a866f0aa9bc7",
+    "Mobile/Sources/Rendering/SpatialMachine.swift": "676a8849ffdf43996f9d9e23adaa926959caffa458681029f728e828212b09fa",
+    "Mobile/Sources/Domain/DeviceLayout.swift": "5174c5c78d00ab95270f5b5417b15369f4a4fa417cd0271803b3ba03279f16aa",
+    "Mobile/Sources/Domain/DeviceModel.swift": "d13b40b622d865101e0f83690251a99b900f4a93a88faff32f48961e39f2c8d1",
+    "Mobile/Sources/Domain/PickerMotion.swift": "49471ed00b73b7d013721f7c4d1c50d875b8e1d5e094afc234797e90b690459f",
+    "Mobile/Sources/Domain/GameCatalog.swift": "13ac1d4debfa069e2a7ae543b365fe1574ff42b81c6a79aecc1fbc7e29bb50f5",
+    "Mobile/Sources/Domain/ROMLibrary.swift": "eb9e6078efd264b804be4f8a17568b83a6b298effe62bc555a5cc6e1a58ea346"
+  },
+  "private_asset_hashes": {
+    "Assets/Branding/UncleED-Icon.png": "f44568f81c9e3a9c685fa837eec006ac9202b6e8dbbadc086d8eded935ad4427",
+    "Assets/Branding/UncleED.icns": "4de42576d84eafdf879638f4e967483c15038afe0ba3173d021a7363dd36adf5",
+    "Assets/Logos/3ds-home.png": "f8071f4e7ec747e72d65aad376676d7d4c3a11808dfe6d7203aa983959d1e159",
+    "Assets/Logos/Sources.md": "6ea790b6910a3dd0a6481578b21044e86b018d29747b5d31918ce017110193c4",
+    "Assets/Logos/gba-dark.svg": "365d0545922b22ff2a0650332365ccae0c4010fe6b01afb1ead27615d11a73b6",
+    "Assets/Logos/gba-home.png": "856bc902625d0737094eff40e9d147646762925274d5ff8d35981c4739feddb4",
+    "Assets/Logos/gba.svg": "0f753b5e62eb1454b966c716a48db09ebae27a9d92dd0642a3b690e160366b00",
+    "Assets/Logos/gbc-dark.svg": "83cfc083ed75090d9bcc4aff68244249fd72b31129ca8efacbc5b33193a65ca6",
+    "Assets/Logos/gbc-home.png": "40cf5940b14ac00ca9c308c2c41a0018e270034522c2b2d7ce360ac15f0845c2",
+    "Assets/Logos/gbc.svg": "a57eccb8956df00de7ec6032dbd65cefe9c0fddee15626754b33b9587d11def3",
+    "Assets/Logos/nds-dark.svg": "ded8dd8d7a95c63bff25efaf88221ad15311c9dc6de492bbc387fba94bfb0085",
+    "Assets/Logos/nds-home.png": "7ed2ec0ccee088a9be6dbdc0c0975ad189255937c987f1f5dd3b9bd95a9a5de6",
+    "Assets/Logos/nds.svg": "da3b4beaad583c631544fb3f378829a994052fea5a9ea9cde3bcdd5ec7f5cc92",
+    "Assets/Logos/psp-home.png": "bdf3deefc5507e6645fb11c63f46ab32282c2fa30f33f035ca5b1973f87d7b03",
+    "Assets/Skins/Spatial/3ds-0.scn": "8bf2c2ab9ef52b4977b60dae0d0f8bf1019ad2716035e4f10c2034b103ea0248",
+    "Assets/Skins/Spatial/3ds-1.scn": "ef662c43288b7f9f83b281ea62b4c887e3bfcf9091d63537d5517634af540a43",
+    "Assets/Skins/Spatial/3ds-2.scn": "2c53b00e95bf15239200a164a564b6d686ed67be5727a4910bd8aaae63b1c0f7",
+    "Assets/Skins/Spatial/finishes.json": "9de6742e4baa33f75c59ef4ca4e7b875c877cafecaabefaadfcbbd69855a7f20",
+    "Assets/Skins/Spatial/gba-0.scn": "8b117d6fe0ec228ce974a362ea1be23a9546fe8b9b35fae0f3044ee89b98e162",
+    "Assets/Skins/Spatial/gba-1.scn": "2022b5433f0f467993f5e049467712fcb2268c1a09d1b458aec551bbdd0b7c9c",
+    "Assets/Skins/Spatial/gba-2.scn": "f6f9af6af6edde445713e40adc0d46dbba819aa6aa3ba38ba2b2c66d43c04587",
+    "Assets/Skins/Spatial/gba-3.scn": "e3eb488c032e6a535754255801aa25ea5dd878b8af6be24cde8cdde7379aff32",
+    "Assets/Skins/Spatial/gbc-0.scn": "a1502a37b782348f9823fbc5eb3481e205b0c57519133ccac900cf7f5e7f29dc",
+    "Assets/Skins/Spatial/gbc-1.scn": "10055caee8be1b081b230614ddc5c1ef36df7739a73e00f0e6713ac865651f0c",
+    "Assets/Skins/Spatial/gbc-2.scn": "df3616ed24defc8e2bce9248a3125c90ef271f8c6c51d69b8c5a75ae99d522d3",
+    "Assets/Skins/Spatial/geometry.json": "770cfd5a6c98fbad15f26eef1db65ed7951e1c85485b35d3fb148eb5f4c51b89",
+    "Assets/Skins/Spatial/media-3ds.scn": "785a7d1dc16cc03867dfafe13a7e1f42b3dc146a26ea50b1db0fa3f13796ca60",
+    "Assets/Skins/Spatial/media-gba.scn": "9b16523f91813d8d66ad589d1a1e512379242ecc251b12e4308692fd0b540570",
+    "Assets/Skins/Spatial/media-gbc.scn": "9f896c94f3bb5279a41ce1daab29f3aa5a87991c20d907516756019b3792ddd1",
+    "Assets/Skins/Spatial/media-nds.scn": "46156e548c6007164261ba04ac05a90bb6ed60083f305b4768215ca9d7cc65b0",
+    "Assets/Skins/Spatial/media-psp.scn": "a681d84944f39107e0e4c745cad95be8e1e8c6274e3c34ddd435957748b2ac37",
+    "Assets/Skins/Spatial/nds-0.scn": "cb7b175767919d0ccb0362b3c915fb204a278c8276695a5f3be9cf29a35d8cbf",
+    "Assets/Skins/Spatial/nds-1.scn": "df2641cf21245c05fb5d3e85bb23e42d335a7ee353988ffcabe713792d31d8cd",
+    "Assets/Skins/Spatial/nds-2.scn": "79dce8cb7fef7c163785c749bf95cbed7ede66031bc7a48b6b9afbcd528fa0ba",
+    "Assets/Skins/Spatial/psp-0.scn": "af100bd014ae2c3a042b253727b80383078089cb1b842c5839a90c51c6f2fe7c",
+    "Assets/Skins/Spatial/psp-1.scn": "515f7fb818580a00976b0eacf6c3397cb99859c019dc2633ea96e6d5d5885103",
+    "Assets/Skins/Spatial/psp-2.scn": "2fdb5fb30df77657d707e7ccc06d570da7294af9d2f3cf6bd672528203499135",
+    "Assets/Patterns/3ds-sunmoon-silk.json": "21b879d444e72160fed5e098266817e4adc441c924c45a9f564ce7e546b46612",
+    "Assets/Sounds/media-latch.wav": "34f9acdf9e572e078131625d873278ed2ff5ebb41194a1cc56c63f0245eab0b3",
+    "Assets/Sounds/media-slide.wav": "865a21d637988f6cced7eb6e33f7c894968304648156453bcf2be3efe37bdaad",
+    "Assets/Sounds/psp-disc-read.wav": "cc914b2b825995639e64bd4a9f78954ba509c317133c6443fdafd290cf63c76e",
+    "Assets/Sounds/psp-disc-seat.wav": "b9b792e697fab517da42b581b09cf61f4477245eb33ab9278815517d68f9186c",
+    "Assets/Sounds/psp-door-close.wav": "f66b2a3147faa1d79e0de46d18cdfe20e54ab1618861dc2133e20dcc8f32820f",
+    "Assets/Sounds/psp-door-open.wav": "a276c4aeb792e2590b0b8aeb685be483add3337f13dabacf5d65206a668c0487",
+    "Assets/media-slots.json": "82999106eb626f2ee9ca287a12e9e62cfc51fb258abaceec94332e249e1fab86",
+    "Assets/Skins/spatial-manifest.json": "9bcaccb4ee2189f9e45c5edeb6e007cd5fce975ae532f9df4dc106b1c99c69cb"
+  },
+  "themes": {
+    "nds": [
+      "宝可梦黑白限定版",
+      "马里奥限定版",
+      "塞尔达限定版",
+      "黑磨砂"
+    ],
+    "gba": [
+      "原生黄色",
+      "索尼克定制",
+      "EVA 定制",
+      "白色磨砂半透明"
+    ],
+    "gbc": [
+      "宝可梦中心限定",
+      "经典原始配色",
+      "经典黄配色",
+      "黑磨砂"
+    ],
+    "psp": [
+      "最终幻想限定",
+      "怪物猎人限定",
+      "实况足球限定",
+      "黑磨砂"
+    ],
+    "n3ds": [
+      "塞尔达限定",
+      "宝可梦日月限定",
+      "大乱斗限定",
+      "黑磨砂"
+    ]
+  },
+  "layout": {
+    "projection": "orthographic",
+    "phone_models": [
+      "gba",
+      "gbc",
+      "psp"
+    ],
+    "tablet_models": [
+      "nds",
+      "gba",
+      "gbc",
+      "psp",
+      "3ds"
+    ],
+    "theme_heading_position": "top, beneath model name",
+    "theme_heading_model_font_pt": 17.5,
+    "theme_heading_theme_font_pt": 13.5,
+    "phone_preview_width_safe_fraction": 0.76,
+    "tablet_preview_width_safe_fraction": 0.9,
+    "theme_crossfade_seconds": 0.28,
+    "page_controls": {
+      "tap_target_page": true,
+      "continuous_scrub": true,
+      "hide_single": true,
+      "one_step_per_swipe": true
+    }
+  },
+  "motion": {
+    "idle_period_seconds": 8.5,
+    "yaw_radians": 0.18,
+    "pitch_radians": 0.055,
+    "button_transition_seconds": 0.075,
+    "cartridge_insert_seconds": 1.65,
+    "psp_insert_seconds": 2.95,
+    "psp_door_radians": 1.18,
+    "psp_phases": {
+      "open": [
+        0,
+        0.18
+      ],
+      "seat": [
+        0.18,
+        0.65
+      ],
+      "close": [
+        0.68,
+        0.84
+      ],
+      "read": [
+        0.86,
+        1
+      ]
+    }
+  },
+  "rendering": {
+    "ambient_apple_intensity": 130,
+    "key_apple_intensity": 460,
+    "fill_apple_intensity": 120,
+    "spot_apple_intensity": 200,
+    "warning": "Apple light units must be calibrated in Android, not copied numerically as Filament lux."
+  },
+  "android_acceptance": {
+    "product_visual_pages_passed": 0,
+    "prototype_is_product_baseline": false,
+    "phone_device": "OPPO PGEM10",
+    "physical_tablet_available": false
+  },
+  "historical_screenshots": {
+    "Structure-2026-10-25/iphone-gba-theme-0.png": "visual reference; reconcile with current source and latest user feedback",
+    "Physical-Interaction-2026-10-24/iphone-gba-library.png": "DO NOT copy old tiny cover / loose metadata layout; superseded by later requirements"
+  }
+}

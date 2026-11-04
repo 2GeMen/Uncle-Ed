@@ -1,0 +1,6 @@
+<resources>
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowSplashScreenBackground">#181F1D</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/uncleed_splash</item>
+    </style>
+</resources>

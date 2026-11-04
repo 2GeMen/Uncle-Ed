@@ -1,0 +1,15 @@
+diff --git a/Common/File/FileUtil.cpp b/Common/File/FileUtil.cpp
+index f5da3c8..e90dab6 100644
+--- a/Common/File/FileUtil.cpp
++++ b/Common/File/FileUtil.cpp
+@@ -219,8 +219,8 @@ FILE *OpenCFile(const Path &path, const char *mode) {
+ 		FILE *f = filestream_open(path.c_str(), RETRO_VFS_FILE_ACCESS_READ, RETRO_VFS_FILE_ACCESS_HINT_NONE);
+ 		INFO_LOG(Log::IO, "OpenCFile(%s): Opening content file for read (libretro vfs): %s", path.c_str(), f ? "ok" : "null");
+ 		return f;
+-	} else if (!strcmp(mode, "w") || !strcmp(mode, "wb") || !strcmp(mode, "wt") || !strcmp(mode, "at") || !strcmp(mode, "a")) {
+-		bool append = !strcmp(mode, "at") || !strcmp(mode, "a");
++	} else if (!strcmp(mode, "w") || !strcmp(mode, "wb") || !strcmp(mode, "wt") || !strcmp(mode, "at") || !strcmp(mode, "a") || !strcmp(mode, "ab")) {
++		bool append = !strcmp(mode, "at") || !strcmp(mode, "a") || !strcmp(mode, "ab");
+ 		FILE *f = filestream_open(path.c_str(), append && Exists(path) ? RETRO_VFS_FILE_ACCESS_WRITE | RETRO_VFS_FILE_ACCESS_UPDATE_EXISTING : RETRO_VFS_FILE_ACCESS_WRITE, RETRO_VFS_FILE_ACCESS_HINT_NONE);
+ 		INFO_LOG(Log::IO, "OpenCFile(%s): Opening content file for write (libretro vfs): %s", path.c_str(), f ? "ok" : "null");
+ 		if (f != nullptr && append) {

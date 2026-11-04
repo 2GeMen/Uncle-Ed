@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(uncleed LANGUAGES C CXX)
+add_library(uncleed SHARED runtime.cpp)
+target_compile_features(uncleed PRIVATE cxx_std_17)
+target_link_options(uncleed PRIVATE "-Wl,-z,max-page-size=16384")
+target_link_libraries(uncleed android log dl EGL GLESv3)

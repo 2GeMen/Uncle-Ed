@@ -14,6 +14,14 @@ provides an isolated Android ARM64 installer and corresponding core source.
 It does not establish public asset clearance, full platform parity, or an Apple
 distribution release. Game files and user saves remain separate.
 
+## Built with the open-source community
+
+感谢 [RetroArch](https://github.com/libretro/RetroArch) / [libretro](https://github.com/libretro/libretro-common)
+团队，以及 [mGBA](https://github.com/mgba-emu/mgba)、[melonDS DS](https://github.com/JesseTG/melonds-ds)、
+[melonDS](https://github.com/melonDS-emu/melonDS) 和 [PPSSPP](https://github.com/hrydgard/ppsspp) 的维护者。
+Uncle Ed. 自行实现前端与 libretro 宿主；模拟能力来自各上游核心。
+详见 [项目来源、版本及本地修改](UPSTREAM.md) 和 [第三方许可](THIRD_PARTY_NOTICES.md)。
+
 ## Product requirements and migration
 
 The [consolidated requirements](Docs/Product/PRODUCT-REQUIREMENTS.zh-CN.md), [staged Android plan](Docs/Product/ANDROID-IMPLEMENTATION-PLAN.zh-CN.md), and [79-item traceability matrix](Docs/Product/REQUIREMENTS-TRACEABILITY.csv) are the product baseline. Match the established iOS experience; do not evolve the generic prototype UI as the product.

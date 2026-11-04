@@ -15,7 +15,7 @@ ASSET_SUFFIX={'.png','.jpg','.jpeg','.svg','.scn','.glb','.gltf','.wav','.mp3','
 p=argparse.ArgumentParser();p.add_argument('destination',type=Path);a=p.parse_args();dest=a.destination.resolve()
 if dest.exists() or dest.is_relative_to(ROOT):sys.exit('Destination must be a NEW directory outside the working tree')
 registry=json.loads((ROOT/'Shared/asset-provenance.json').read_text()).get('assets',{})
-roots=['Sources','Mobile','Android','Shared','Scripts','Tests','Docs','LICENSES','Assets','README.md','LICENSE','THIRD_PARTY_NOTICES.md','AGENTS.md','.gitignore','build.command']
+roots=['Sources','Mobile','Android','Shared','Scripts','Tests','Docs','LICENSES','Assets','README.md','UPSTREAM.md','LICENSE','THIRD_PARTY_NOTICES.md','AGENTS.md','.gitignore','build.command']
 files=[];omitted=[]
 for entry in roots:
  base=ROOT/entry

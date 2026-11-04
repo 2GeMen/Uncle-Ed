@@ -46,8 +46,8 @@ original path. See Android/patches and Scripts/check-android-kirk.py.
 Self-authored code is GPL-3.0-or-later. The author's personal learning and
 non-commercial intent adds no restriction to GPL recipients. No ROM, firmware,
 keys, saves, soundtrack or third-party character artwork is licensed by this
-notice. Current appearance inputs accompany only the private closed-test build;
-public redistribution has not been cleared. Apple nightly binaries still need
+notice. The owner requested public access to the existing beta on 2026-11-04;
+third-party appearance redistribution rights have not been established. Apple nightly binaries still need
 exact source/build provenance before an Apple distribution release.
 
 No upstream endorsement or affiliation is implied. Keep upstream license and

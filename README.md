@@ -3,13 +3,13 @@
 经典再次上场。A tactile, three-dimensional handheld-emulation frontend for
 rediscovering games you already own.
 
-**Development staging — not a public release. The Android prototype has not passed product-experience acceptance.** The Apple application exists;
+**Public early beta — not a stable release. Android product-experience acceptance is incomplete.** The Apple application exists;
 Android is a native port in progress. An APK compiling successfully does not
 establish gameplay compatibility, save reliability, performance, or parity.
 See [Android acceptance](Docs/ANDROID-PARITY.md) and
 [distribution boundaries](Docs/DISTRIBUTION.md).
 
-The private repository's [v0.1.0-beta.1 closed-test package](Docs/Releases/v0.1.0-beta.1.zh-CN.md)
+The [v0.1.0-beta.1 test package](Docs/Releases/v0.1.0-beta.1.zh-CN.md)
 provides an isolated Android ARM64 installer and corresponding core source.
 It does not establish public asset clearance, full platform parity, or an Apple
 distribution release. Game files and user saves remain separate.
@@ -39,9 +39,12 @@ credentials are supplied separately. This project provides no commercial games
 or firmware. Use the system document picker to import files you are entitled to
 use. Do not commit personal libraries or build output.
 
-The existing private appearance is retained in a local development asset pack.
-The owner has **not yet approved the public asset selection**. Software licensing
-does not grant permission to redistribute third-party character artwork.
+The owner requested public access to this repository and the existing beta on
+2026-11-04. The beta retains the current appearance; some original attachment
+names and notes still refer to its initial private testing stage. GPL applies
+to source code, not to third-party character artwork, game covers or trademarks.
+Public hosting is not evidence of third-party artwork clearance. See
+[publication scope](Docs/PUBLICATION.md).
 
 ## Android development
 

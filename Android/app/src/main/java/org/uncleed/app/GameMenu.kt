@@ -30,5 +30,6 @@ class GameMenu(context:Context,scale:Float,x:Float,y:Float,onDisplay:(Float,Floa
   if(bookMode!=null)action(if(bookMode)"恢复双屏握法" else "切换书本握法",onBook)
   action("恢复默认显示"){size=1f;horizontal=0f;vertical=0f;onDisplay(size,horizontal,vertical);onResume()}
   action("保存并返回收藏",onShelf);action("保存并选择掌机",onMachines)
+  label("本项目仅用于个人 VibeCoding 学习，非商业化用途。\n开源组件沿用各自许可，第三方素材权利归原权利人。",11f)
  }
 }

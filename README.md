@@ -9,6 +9,11 @@ establish gameplay compatibility, save reliability, performance, or parity.
 See [Android acceptance](Docs/ANDROID-PARITY.md) and
 [distribution boundaries](Docs/DISTRIBUTION.md).
 
+The private repository's [v0.1.0-beta.1 closed-test package](Docs/Releases/v0.1.0-beta.1.zh-CN.md)
+provides an isolated Android ARM64 installer and corresponding core source.
+It does not establish public asset clearance, full platform parity, or an Apple
+distribution release. Game files and user saves remain separate.
+
 ## Product requirements and migration
 
 The [consolidated requirements](Docs/Product/PRODUCT-REQUIREMENTS.zh-CN.md), [staged Android plan](Docs/Product/ANDROID-IMPLEMENTATION-PLAN.zh-CN.md), and [79-item traceability matrix](Docs/Product/REQUIREMENTS-TRACEABILITY.csv) are the product baseline. Match the established iOS experience; do not evolve the generic prototype UI as the product.

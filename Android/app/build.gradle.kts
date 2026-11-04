@@ -16,15 +16,36 @@ android {
         targetSdk = 36
         testInstrumentationRunner = "org.uncleed.app.CoreProbeInstrumentation"
         versionCode = 1
-        versionName = "0.1.0-dev"
-        ndk { abiFilters += listOf("arm64-v8a", "x86_64") }
+        versionName = providers.gradleProperty("uncleedVersionName").orElse("0.1.0-dev").get()
+        ndk { abiFilters += providers.gradleProperty("uncleedAbis").orElse("arm64-v8a,x86_64").get().split(",") }
         externalNativeBuild { cmake { cppFlags += listOf("-std=c++17", "-O2") } }
     }
     externalNativeBuild { cmake { path = file("src/main/cpp/CMakeLists.txt"); version = "3.22.1" } }
+    signingConfigs {
+        create("beta") {
+            System.getenv("UNCLEED_BETA_KEYSTORE")?.let { storeFile = file(it) }
+            storePassword = System.getenv("UNCLEED_BETA_STORE_PASSWORD")
+            keyAlias = "uncleed-beta"
+            keyPassword = System.getenv("UNCLEED_BETA_STORE_PASSWORD")
+        }
+    }
     buildTypes {
         release { isMinifyEnabled = false; isDebuggable = false }
+        create("beta") {
+            initWith(getByName("release"))
+            applicationIdSuffix = ".beta"
+            versionNameSuffix = "-beta.1"
+            signingConfig = signingConfigs.getByName("beta")
+            matchingFallbacks += listOf("release")
+        }
     }
     sourceSets.getByName("debug") {
+        System.getenv("UNCLEED_PRIVATE_RESOURCES")?.let { res.srcDir(it) }
+        System.getenv("UNCLEED_PRIVATE_ASSETS")?.let { assets.srcDir(it) }
+        privateCorePack?.let { jniLibs.srcDir(stagedPrivateCores) }
+    }
+    // Closed testing only: current appearance is not approved for public distribution.
+    sourceSets.getByName("beta") {
         System.getenv("UNCLEED_PRIVATE_RESOURCES")?.let { res.srcDir(it) }
         System.getenv("UNCLEED_PRIVATE_ASSETS")?.let { assets.srcDir(it) }
         privateCorePack?.let { jniLibs.srcDir(stagedPrivateCores) }
@@ -41,3 +62,4 @@ dependencies {
 }
 
 tasks.matching { it.name == "preDebugBuild" }.configureEach { dependsOn(stagePrivateCores) }
+tasks.matching { it.name == "preBetaBuild" }.configureEach { dependsOn(stagePrivateCores) }

@@ -34,6 +34,27 @@ Release source sets intentionally do not inherit these private input directories
 Do not distribute a debug APK as a signed release. Public model resources,
 upstream corresponding sources and stable signing are still release prerequisites.
 
+## Private closed-test beta
+
+The `beta` build type is non-debuggable, uses application ID `org.uncleed.app.beta`
+and a persistent, separately backed-up signing key. It deliberately coexists with
+the developer app; their libraries/saves are separate. It is not public asset
+clearance. At the owner's request, the private Release includes current appearance
+inputs as a separate archive, without ROMs or personal data.
+
+Set the three private input variables above, `UNCLEED_BETA_KEYSTORE` to your local
+PKCS12 keystore, and `UNCLEED_BETA_STORE_PASSWORD` to its password. The alias is
+`uncleed-beta`; keep credentials out of source and command logs. Then build:
+
+```sh
+gradle -PuncleedVersionName=0.1.0 -PuncleedAbis=arm64-v8a :app:assembleBeta
+```
+
+Use your own signing key to rebuild; only the maintainer's same key can update
+an already-installed official beta without reinstalling. The adjacent Release
+contains exact core source archives and `rebuild-beta-cores.py` (Python >= 3.12).
+See [installation, limitations and Apple distribution status](../Docs/Releases/v0.1.0-beta.1.zh-CN.md).
+
 ## Validation still required
 
 - Physical OPPO Find X6 rendering, multitouch, controllers and lifecycle.

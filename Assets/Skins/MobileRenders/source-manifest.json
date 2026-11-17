@@ -1,0 +1,22 @@
+{
+  "description": "Shared baked SceneKit geometry and materials from native Mac drawing sources; live game frames remain independent screen textures.",
+  "sourceSHA256": {
+    "Sources/main.swift": "2c0acc9c73a2ef2df4dbc5a8a6d9824cdb9671dfefe49e4f5fee5f5e3c0e3766",
+    "Sources/Classic.swift": "63209aecc2a77b4a03852faeeee8a69f3aad1c46149d3ac70b31ae1381c99ce3",
+    "Sources/Modern.swift": "93e7a41e9d14ea73917e587f8d459a9774b5f0b877750af6f9bb0922eededa1c",
+    "Sources/Controls.swift": "692424a91e10e4b7a0633dffe21f94b003e73016b3f28cf13f9f3bb54a610084",
+    "Sources/Cartridges.swift": "6372a83988e270294b6ae191a20b144230732696a5b4a5bafc13227491e762b9",
+    "Sources/Library.swift": "3740bda15cd3b2d51191ccb93d263d4710c1d5aa725579e773b7f54dc84765f4",
+    "Sources/GameCatalog.swift": "13ac1d4debfa069e2a7ae543b365fe1574ff42b81c6a79aecc1fbc7e29bb50f5",
+    "Sources/PickerMotion.swift": "49471ed00b73b7d013721f7c4d1c50d875b8e1d5e094afc234797e90b690459f",
+    "Sources/GBCScene.swift": "04b88f310af898e7b873a9c57114784a968390596aede5145f3df183481a7f4a",
+    "Sources/MechanicalControls.swift": "b64ee9be1f9e018b1f2f4ac057fca5f3105d3372e8b15c9aed75578d3f00ab3f",
+    "Sources/SpatialMachine.swift": "ffbbf467842a79bcb1f26440b904cf316a1078caba035e3353cafb5621ba9af6",
+    "Sources/SpatialCarousel.swift": "797f65bdcbdb795fa93eb3a532dfa78e532d3e0c96a6e1ec0b2042594688c868",
+    "Sources/UniversalStage.swift": "d171ec8c9dc2a58401e96737066c6877aa022088ee593569d755e2ea0c1b7aa7",
+    "Assets/media-slots.json": "82999106eb626f2ee9ca287a12e9e62cfc51fb258abaceec94332e249e1fab86",
+    "Mobile/Scripts/export-mac-layers.py": "06d5e02ef41616a3577818b219148b331c27ec0aa4cfe77c0bd773244e24eb76",
+    "Mobile/Scripts/MacLayerExport.swift": "11d2741376fa0179c8404f28fb0459381801372ae4ffb7d560a68e733e1feb9d",
+    "Mobile/Scripts/SpatialBake.swift": "c6eb2043acc793f128e7d1c66fd957052cd57c012f83b981f3e192848484c625"
+  }
+}

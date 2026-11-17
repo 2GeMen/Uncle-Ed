@@ -1,0 +1,41 @@
+{
+  "format": 1,
+  "bakeInputs": {
+    "Sources/Classic.swift": "63209aecc2a77b4a03852faeeee8a69f3aad1c46149d3ac70b31ae1381c99ce3",
+    "Sources/Modern.swift": "93e7a41e9d14ea73917e587f8d459a9774b5f0b877750af6f9bb0922eededa1c",
+    "Sources/Controls.swift": "692424a91e10e4b7a0633dffe21f94b003e73016b3f28cf13f9f3bb54a610084",
+    "Sources/Cartridges.swift": "6372a83988e270294b6ae191a20b144230732696a5b4a5bafc13227491e762b9",
+    "Sources/GBCScene.swift": "04b88f310af898e7b873a9c57114784a968390596aede5145f3df183481a7f4a",
+    "Sources/MechanicalControls.swift": "b64ee9be1f9e018b1f2f4ac057fca5f3105d3372e8b15c9aed75578d3f00ab3f",
+    "Assets/media-slots.json": "82999106eb626f2ee9ca287a12e9e62cfc51fb258abaceec94332e249e1fab86",
+    "Assets/Patterns/3ds-sunmoon-silk.json": "21b879d444e72160fed5e098266817e4adc441c924c45a9f564ce7e546b46612",
+    "Mobile/Scripts/MacLayerExport.swift": "11d2741376fa0179c8404f28fb0459381801372ae4ffb7d560a68e733e1feb9d",
+    "Mobile/Scripts/SpatialBake.swift": "c6eb2043acc793f128e7d1c66fd957052cd57c012f83b981f3e192848484c625",
+    "Mobile/Scripts/export-mac-layers.py": "06d5e02ef41616a3577818b219148b331c27ec0aa4cfe77c0bd773244e24eb76"
+  },
+  "assets": {
+    "Assets/Skins/Spatial/3ds-0.scn": "8bf2c2ab9ef52b4977b60dae0d0f8bf1019ad2716035e4f10c2034b103ea0248",
+    "Assets/Skins/Spatial/3ds-1.scn": "ef662c43288b7f9f83b281ea62b4c887e3bfcf9091d63537d5517634af540a43",
+    "Assets/Skins/Spatial/3ds-2.scn": "2c53b00e95bf15239200a164a564b6d686ed67be5727a4910bd8aaae63b1c0f7",
+    "Assets/Skins/Spatial/finishes.json": "9de6742e4baa33f75c59ef4ca4e7b875c877cafecaabefaadfcbbd69855a7f20",
+    "Assets/Skins/Spatial/gba-0.scn": "8b117d6fe0ec228ce974a362ea1be23a9546fe8b9b35fae0f3044ee89b98e162",
+    "Assets/Skins/Spatial/gba-1.scn": "2022b5433f0f467993f5e049467712fcb2268c1a09d1b458aec551bbdd0b7c9c",
+    "Assets/Skins/Spatial/gba-2.scn": "f6f9af6af6edde445713e40adc0d46dbba819aa6aa3ba38ba2b2c66d43c04587",
+    "Assets/Skins/Spatial/gba-3.scn": "e3eb488c032e6a535754255801aa25ea5dd878b8af6be24cde8cdde7379aff32",
+    "Assets/Skins/Spatial/gbc-0.scn": "a1502a37b782348f9823fbc5eb3481e205b0c57519133ccac900cf7f5e7f29dc",
+    "Assets/Skins/Spatial/gbc-1.scn": "10055caee8be1b081b230614ddc5c1ef36df7739a73e00f0e6713ac865651f0c",
+    "Assets/Skins/Spatial/gbc-2.scn": "df3616ed24defc8e2bce9248a3125c90ef271f8c6c51d69b8c5a75ae99d522d3",
+    "Assets/Skins/Spatial/geometry.json": "770cfd5a6c98fbad15f26eef1db65ed7951e1c85485b35d3fb148eb5f4c51b89",
+    "Assets/Skins/Spatial/media-3ds.scn": "785a7d1dc16cc03867dfafe13a7e1f42b3dc146a26ea50b1db0fa3f13796ca60",
+    "Assets/Skins/Spatial/media-gba.scn": "9b16523f91813d8d66ad589d1a1e512379242ecc251b12e4308692fd0b540570",
+    "Assets/Skins/Spatial/media-gbc.scn": "9f896c94f3bb5279a41ce1daab29f3aa5a87991c20d907516756019b3792ddd1",
+    "Assets/Skins/Spatial/media-nds.scn": "46156e548c6007164261ba04ac05a90bb6ed60083f305b4768215ca9d7cc65b0",
+    "Assets/Skins/Spatial/media-psp.scn": "a681d84944f39107e0e4c745cad95be8e1e8c6274e3c34ddd435957748b2ac37",
+    "Assets/Skins/Spatial/nds-0.scn": "cb7b175767919d0ccb0362b3c915fb204a278c8276695a5f3be9cf29a35d8cbf",
+    "Assets/Skins/Spatial/nds-1.scn": "df2641cf21245c05fb5d3e85bb23e42d335a7ee353988ffcabe713792d31d8cd",
+    "Assets/Skins/Spatial/nds-2.scn": "79dce8cb7fef7c163785c749bf95cbed7ede66031bc7a48b6b9afbcd528fa0ba",
+    "Assets/Skins/Spatial/psp-0.scn": "af100bd014ae2c3a042b253727b80383078089cb1b842c5839a90c51c6f2fe7c",
+    "Assets/Skins/Spatial/psp-1.scn": "515f7fb818580a00976b0eacf6c3397cb99859c019dc2633ea96e6d5d5885103",
+    "Assets/Skins/Spatial/psp-2.scn": "2fdb5fb30df77657d707e7ccc06d570da7294af9d2f3cf6bd672528203499135"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "nds": {
+    "x": 284,
+    "y": 355,
+    "width": 152,
+    "height": 5,
+    "cardWidth": 148,
+    "ratio": 1.0804597701149425
+  },
+  "3ds": {
+    "x": 286,
+    "y": 355,
+    "width": 148,
+    "height": 5,
+    "cardWidth": 144,
+    "ratio": 1
+  },
+  "gba": {
+    "x": 228,
+    "y": 30,
+    "width": 264,
+    "height": 9,
+    "cardWidth": 256,
+    "ratio": 0.5777777777777777
+  },
+  "gbc": {
+    "x": 60,
+    "y": 20,
+    "width": 260,
+    "height": 8,
+    "cardWidth": 252,
+    "ratio": 1.1363636363636365
+  }
+}

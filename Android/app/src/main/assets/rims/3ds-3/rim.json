@@ -1,0 +1,104 @@
+{
+  "bounds" : [
+    -3.3639962673187256,
+    -1.8581781387329102,
+    3.3593704700469971,
+    1.8253161907196045
+  ],
+  "colour" : [
+    255,
+    214,
+    133
+  ],
+  "frames" : [
+    "pose-00.png",
+    "pose-01.png",
+    "pose-02.png",
+    "pose-03.png",
+    "pose-04.png",
+    "pose-05.png",
+    "pose-06.png",
+    "pose-07.png",
+    "pose-08.png",
+    "pose-09.png",
+    "pose-10.png",
+    "pose-11.png",
+    "pose-12.png",
+    "pose-13.png",
+    "pose-14.png",
+    "pose-15.png"
+  ],
+  "method" : "shared iOS solid silhouette; planes excluded; constant union bounds; centred on glTF geometry",
+  "model" : "3ds",
+  "normalizationScale" : 0.31125500798225403,
+  "periodSeconds" : 8.5,
+  "pixelSizes" : [
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ],
+    [
+      1345,
+      737
+    ]
+  ],
+  "sourceGLBSha256" : "b6aa08d6827d9dd639b333d43a123c968e3c2dccb139c420528875bb38da5701",
+  "theme" : 3,
+  "version" : 1
+}

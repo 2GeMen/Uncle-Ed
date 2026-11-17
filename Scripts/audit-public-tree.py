@@ -32,7 +32,13 @@ def audit(root,require_release=False):
   if p.is_symlink():findings.append((str(rel),'symlink is not a distributable asset'));continue
   if not p.is_file():continue
   ext=p.suffix.lower();parts={x.lower() for x in rel.parts[:-1]}
-  if ext in ROM_EXT or parts&PRIVATE_DIRS:findings.append((str(rel),'private/game content path'))
+  entry=assets.get(str(rel),{})
+  listed=entry.get('status') in {'approved','owner-authorized'} and entry.get('sha256')==hashlib.sha256(p.read_bytes()).hexdigest() and bool(entry.get('license'))
+  private_parts=parts&PRIVATE_DIRS
+  # An individually inventoried cover illustration is presentation data, not a ROM.
+  # This exception never applies to game files, saves, keys or arbitrary cover caches.
+  if listed:private_parts=private_parts-{'covers'}
+  if ext in ROM_EXT or private_parts:findings.append((str(rel),'private/game content path'))
   if ext in SECRET_EXT:findings.append((str(rel),'signing or credential file'))
   if ext in BINARY_EXT:findings.append((str(rel),'unreviewed binary/archive in source tree'))
   kind=content_kind(p)
@@ -42,8 +48,7 @@ def audit(root,require_release=False):
    if any(rx.search(data) for rx in SECRET_PATTERNS):findings.append((str(rel),'credential signature; value redacted'))
    if re.search(rb'/Users/[A-Za-z0-9._-]+/',data) or (b'CODE_SIGN_IDENTITY' + b' = "Apple Development:') in data:findings.append((str(rel),'private build-machine identity'))
   if ext in ASSET_EXT:
-   entry=assets.get(str(rel));sha=hashlib.sha256(p.read_bytes()).hexdigest()
-   if not entry or entry.get('status')!='approved' or entry.get('sha256')!=sha or not entry.get('license'):
+   if not listed:
     findings.append((str(rel),'asset requires rights review and hash approval'))
  if require_release:
   release=root/'Shared/release-readiness.json'

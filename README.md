@@ -1,5 +1,7 @@
 # Uncle Ed.
 
+<img src="Assets/Branding/UncleED-Icon.png" alt="Uncle Ed. original app icon" width="128">
+
 经典再次上场。A tactile, three-dimensional handheld-emulation frontend for
 rediscovering games you already own.
 
@@ -9,7 +11,7 @@ establish gameplay compatibility, save reliability, performance, or parity.
 See [Android acceptance](Docs/ANDROID-PARITY.md) and
 [distribution boundaries](Docs/DISTRIBUTION.md).
 
-The [v0.1.0-beta.1 test package](Docs/Releases/v0.1.0-beta.1.zh-CN.md)
+The [v0.1.0-beta.2 resource-complete test package](Docs/Releases/v0.1.0-beta.2.zh-CN.md)
 provides an isolated Android ARM64 installer and corresponding core source.
 It does not establish public asset clearance, full platform parity, or an Apple
 distribution release. Game files and user saves remain separate.
@@ -34,8 +36,9 @@ The [consolidated requirements](Docs/Product/PRODUCT-REQUIREMENTS.zh-CN.md), [st
 - `Shared`: distribution readiness and asset provenance records.
 - `Scripts`: model conversion and publication auditing.
 
-Game files, firmware, saves, emulator binaries, private theme artwork and signing
-credentials are supplied separately. This project provides no commercial games
+Game files, firmware, personal saves, emulator binaries and signing
+credentials are supplied separately. The original app icon and existing runtime
+appearance resources are included in this source checkout for all platforms. This project provides no commercial games
 or firmware. Use the system document picker to import files you are entitled to
 use. Do not commit personal libraries or build output.
 
@@ -59,3 +62,12 @@ Self-authored source: **GPL-3.0-or-later**, see [LICENSE](LICENSE).
 The author's personal learning / non-commercial intent adds no restriction to
 GPL recipients. Dependencies retain their licenses and notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Artwork is separately licensed.
+
+## Original appearance included
+
+The source includes the same application icon, Apple model/texture resources,
+Android model/light/rim resources and mechanical audio as the local version.
+No private artwork directory is needed for default builds. See
+[resource parity and build checks](Docs/RESOURCE-PARITY.md).
+ROMs, personal save data and signing keys remain separate; emulator core build
+instructions and corresponding sources are provided with the test release.

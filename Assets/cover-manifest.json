@@ -1,0 +1,186 @@
+{
+  "IRBO": {
+    "name": "Pokemon - Black Version (USA, Europe) (NDSi Enhanced)",
+    "title": "宝可梦 · 黑",
+    "detail": "USA / EUROPE · 2011",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20DS/Named_Boxarts/Pokemon%20-%20Black%20Version%20(USA,%20Europe)%20(NDSi%20Enhanced).png",
+    "source": "Libretro thumbnails",
+    "match": "ROM game code + exact regional filename"
+  },
+  "YLZE": {
+    "name": "Rhythm Heaven (USA)",
+    "title": "节奏天国",
+    "detail": "USA · 2009",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20DS/Named_Boxarts/Rhythm%20Heaven%20(USA).png",
+    "source": "Libretro thumbnails",
+    "match": "ROM game code + exact regional filename"
+  },
+  "VI2J": {
+    "name": "Fire Emblem - Shin Monshou no Nazo - Hikari to Kage no Eiyuu (Japan) (Rev 1) (NDSi Enhanced) [b]",
+    "title": "火焰纹章 · 新纹章之谜",
+    "detail": "JAPAN · 2010",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20DS/Named_Boxarts/Fire%20Emblem%20-%20Shin%20Monshou%20no%20Nazo%20-%20Hikari%20to%20Kage%20no%20Eiyuu%20(Japan)%20(Rev%201)%20(NDSi%20Enhanced)%20%5bb%5d.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM game code + exact regional filename"
+  },
+  "BPRE": {
+    "name": "Pokemon - FireRed Version (USA)",
+    "title": "宝可梦 · 火红",
+    "detail": "GBA · USA · 2004",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Pokemon%20-%20FireRed%20Version%20%28USA%29.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM header / known cartridge identity + regional filename"
+  },
+  "GB_GOLD": {
+    "name": "Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible)",
+    "title": "宝可梦 · 金",
+    "detail": "GBC / GB · USA / EUROPE · 2000",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Pokemon%20-%20Gold%20Version%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM header / known cartridge identity + regional filename"
+  },
+  "GB_SILVER": {
+    "name": "Pokemon - Silver Version (USA, Europe) (SGB Enhanced) (GB Compatible)",
+    "title": "宝可梦 · 银",
+    "detail": "GBC / GB · USA / EUROPE · 2000",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Pokemon%20-%20Silver%20Version%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM header / known cartridge identity + regional filename"
+  },
+  "BGTE": {
+    "name": "Grand Theft Auto Advance (USA)",
+    "title": "侠盗猎车手 · 前进",
+    "detail": "GBA · USA · 2004",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Grand%20Theft%20Auto%20Advance%20%28USA%29.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM header game code + exact regional filename"
+  },
+  "A7KE": {
+    "name": "Kirby - Nightmare in Dream Land (USA)",
+    "title": "星之卡比 · 梦之泉豪华版",
+    "detail": "GBA · USA · 2002",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Kirby%20-%20Nightmare%20in%20Dream%20Land%20%28USA%29.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM header game code + exact regional filename"
+  },
+  "BPEE": {
+    "name": "Pokemon - Emerald Version (USA, Europe)",
+    "title": "宝可梦 · 绿宝石",
+    "detail": "GBA · USA / EUROPE · 2005",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Pokemon%20-%20Emerald%20Version%20%28USA%2C%20Europe%29.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM header game code + exact regional filename"
+  },
+  "AX4E": {
+    "name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA)",
+    "title": "超级马里奥 Advance 4 · 超级马里奥兄弟 3",
+    "detail": "GBA · USA · 2003",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Super%20Mario%20Advance%204%20-%20Super%20Mario%20Bros.%203%20%28USA%29.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM header game code + exact regional filename"
+  },
+  "AZLE": {
+    "name": "Legend of Zelda, The - A Link to the Past _ Four Swords (USA)",
+    "title": "塞尔达传说 · 众神的三角力量与四支剑",
+    "detail": "GBA · USA · 2002",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Advance/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20_%20Four%20Swords%20%28USA%29.png",
+    "source": "Libretro thumbnails",
+    "match": "ROM header game code + sanitized regional filename"
+  },
+  "GB_4addc742842bce92": {
+    "name": "Grand Theft Auto - Vice City Stories (USA) (v1.03)",
+    "title": "Grand Theft Auto - Vice City Stories",
+    "detail": "Sony - PlayStation Portable",
+    "url": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%20Portable/Named_Boxarts/Grand%20Theft%20Auto%20-%20Vice%20City%20Stories%20%28USA%29%20%28v1.03%29.png",
+    "source": "Libretro thumbnails",
+    "match": "title-region"
+  },
+  "GB_a5067257c5e88c81": {
+    "name": "Legend of Zelda, The - Ocarina of Time 3D (USA) (En,Fr,Es) (Rev 1)",
+    "title": "Legend of Zelda, The - Ocarina of Time 3D",
+    "detail": "Nintendo - Nintendo 3DS",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%203DS/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Ocarina%20of%20Time%203D%20%28USA%29%20%28En%2CFr%2CEs%29%20%28Rev%201%29.png",
+    "source": "Libretro thumbnails",
+    "match": "title-region"
+  },
+  "GB_6313eddc55e1b0da": {
+    "name": "Pokemon X (USA) (En,Ja,Fr,De,Es,It,Ko)",
+    "title": "Pokemon X",
+    "detail": "Nintendo - Nintendo 3DS",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%203DS/Named_Boxarts/Pokemon%20X%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CKo%29.png",
+    "source": "Libretro thumbnails",
+    "match": "title-region"
+  },
+  "GB_38bd1e488bac8329": {
+    "name": "Dragon Warrior I _ II (USA) (SGB Enhanced) (GB Compatible)",
+    "title": "Dragon Warrior III",
+    "detail": "GBC · USA",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Dragon%20Warrior%20I%20_%20II%20%28USA%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  },
+  "GB_2e5a1bbcd93b26fc": {
+    "name": "Legend of Zelda, The - Oracle of Ages (USA, Australia)",
+    "title": "Legend of Zelda, The - Oracle of Ages",
+    "detail": "GBC · USA",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Oracle%20of%20Ages%20%28USA%2C%20Australia%29.png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  },
+  "AZEE": {
+    "name": "Legend of Zelda, The - Phantom Hourglass (USA) (DPAD)",
+    "title": "Legend of Zelda, The - Phantom Hourglass",
+    "detail": "NDS · USA",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20DS/Named_Boxarts/Legend%20of%20Zelda,%20The%20-%20Phantom%20Hourglass%20(USA)%20(DPAD).png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  },
+  "CLJE": {
+    "name": "Mario _ Luigi - Bowser's Inside Story (USA) (Demo) (Kiosk)",
+    "title": "Mario & Luigi - Bowser's Inside Story",
+    "detail": "NDS · USA",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20DS/Named_Boxarts/Mario%20_%20Luigi%20-%20Bowser's%20Inside%20Story%20(USA)%20(Demo)%20(Kiosk).png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  },
+  "AMCE": {
+    "name": "Mario Kart DS (USA) (Demo) (Kiosk)",
+    "title": "Mario Kart DS",
+    "detail": "NDS · USA",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20DS/Named_Boxarts/Mario%20Kart%20DS%20(USA)%20(Demo)%20(Kiosk).png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  },
+  "GB_23f4ee8cb9f42290": {
+    "name": "Pokemon - Crystal Version (USA)",
+    "title": "Pokemon - Crystal Version",
+    "detail": "GBC · USA",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Pokemon%20-%20Crystal%20Version%20%28USA%29.png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  },
+  "IPKE": {
+    "name": "Pokemon - HeartGold Version (USA)",
+    "title": "Pokemon - HeartGold Version",
+    "detail": "NDS · USA",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20DS/Named_Boxarts/Pokemon%20-%20HeartGold%20Version%20(USA).png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  },
+  "GB_b7d0323e5492f8": {
+    "name": "Super Mario Bros. Deluxe (Europe) (Rev 2)",
+    "title": "Super Mario Bros. Deluxe",
+    "detail": "GBC · Europe",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Super%20Mario%20Bros.%20Deluxe%20%28Europe%29%20%28Rev%202%29.png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  },
+  "GB_a1ca95ae20823b96": {
+    "name": "Tetris DX (World) (SGB Enhanced) (GB Compatible)",
+    "title": "Tetris DX",
+    "detail": "GBC · World",
+    "url": "https://thumbnails.libretro.com/Nintendo%20-%20Game%20Boy%20Color/Named_Boxarts/Tetris%20DX%20%28World%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+    "source": "Libretro thumbnails",
+    "match": "exact regional filename"
+  }
+}

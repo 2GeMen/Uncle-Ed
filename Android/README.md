@@ -1,6 +1,6 @@
 # Android development port
 
-**The installed generic UI prototype was rejected as an experience port.** Follow `Docs/Product/PRODUCT-REQUIREMENTS.zh-CN.md` and the phased plan. Do not ship or install that UI as an iOS-parity candidate; rendering research and native core tests do not establish product acceptance.
+**The earlier generic UI prototype was rejected as an experience port.** Follow `Docs/Product/PRODUCT-REQUIREMENTS.zh-CN.md` and the phased plan. Do not ship or install that UI as an iOS-parity candidate; rendering research and native core tests do not establish product acceptance.
 
 This is a native Kotlin / C++ port, not an iOS wrapper. It is not yet feature
 complete or approved for release. Phone browsing exposes GBA, GBC and PSP;
@@ -94,3 +94,21 @@ The GLES3 host supplies an explicit color/depth-stencil framebuffer, restores re
 LCD frames use a separate ungraded display-RGB pass and nearest sampling; shell PBR lighting remains unchanged. Captions follow presented media frames. Physical game controls and PSP utility caps support eased press travel and system-respecting haptic detents. See `../Docs/Product/ANDROID-COLOR-SHELF-HAPTICS-2026-10-28.zh-CN.md` for measured scope and remaining work.
 
 NDS alone exposes book grip, with presented-frame completion before input resumes and inverse lower-screen mapping. Cancelled model loads recreate the resource decoder owner to keep later machines/covers from stalling. Latest OPPO/input and virtual-tablet book evidence: `../Docs/Product/ANDROID-OPPO-BOOK-RESOURCE-2026-10-28.zh-CN.md`.
+
+## Default resources restored (2026-11-17)
+
+All existing appearance assets and the original app icon are tracked under
+app/src/main/assets and app/src/main/res. Building the public checkout does not
+require private artwork or icon directories. Optional private overrides above
+remain compatible with prior development workflows. Build emulator libraries
+from the corresponding source attachments and set UNCLEED_CORE_PACK as needed.
+
+Beta.2 uses the persistent beta signing key, versionCode 2 and the same package ID:
+
+```sh
+gradle -PuncleedVersionName=0.1.0 -PuncleedVersionCode=2 -PuncleedBetaNumber=2 -PuncleedAbis=arm64-v8a :app:assembleBeta
+```
+
+See ../Docs/RESOURCE-PARITY.md for the inventory and verified scope. The original
+rendering quality is preserved; this does not close remaining gameplay/performance
+or physical-device acceptance issues.

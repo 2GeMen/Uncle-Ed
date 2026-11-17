@@ -1,5 +1,5 @@
 plugins { id("com.android.application"); id("org.jetbrains.kotlin.android") }
-val privateCorePack = System.getenv("UNCLEED_PRIVATE_CORES")
+val privateCorePack = System.getenv("UNCLEED_CORE_PACK") ?: System.getenv("UNCLEED_PRIVATE_CORES")
 val stagedPrivateCores = layout.buildDirectory.dir("private-core-libraries")
 val stagePrivateCores = tasks.register<Sync>("stagePrivateCores") {
     privateCorePack?.let { from(it) }
@@ -15,7 +15,7 @@ android {
         minSdk = 28
         targetSdk = 36
         testInstrumentationRunner = "org.uncleed.app.CoreProbeInstrumentation"
-        versionCode = 1
+        versionCode = providers.gradleProperty("uncleedVersionCode").orElse("1").get().toInt()
         versionName = providers.gradleProperty("uncleedVersionName").orElse("0.1.0-dev").get()
         ndk { abiFilters += providers.gradleProperty("uncleedAbis").orElse("arm64-v8a,x86_64").get().split(",") }
         externalNativeBuild { cmake { cppFlags += listOf("-std=c++17", "-O2") } }
@@ -34,10 +34,13 @@ android {
         create("beta") {
             initWith(getByName("release"))
             applicationIdSuffix = ".beta"
-            versionNameSuffix = "-beta.1"
+            versionNameSuffix = "-beta." + providers.gradleProperty("uncleedBetaNumber").orElse("1").get()
             signingConfig = signingConfigs.getByName("beta")
             matchingFallbacks += listOf("release")
         }
+    }
+    sourceSets.getByName("main") {
+        privateCorePack?.let { jniLibs.srcDir(stagedPrivateCores) }
     }
     sourceSets.getByName("debug") {
         System.getenv("UNCLEED_PRIVATE_RESOURCES")?.let { res.srcDir(it) }
@@ -63,3 +66,4 @@ dependencies {
 
 tasks.matching { it.name == "preDebugBuild" }.configureEach { dependsOn(stagePrivateCores) }
 tasks.matching { it.name == "preBetaBuild" }.configureEach { dependsOn(stagePrivateCores) }
+tasks.matching { it.name == "preReleaseBuild" }.configureEach { dependsOn(stagePrivateCores) }

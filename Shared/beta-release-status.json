@@ -1,17 +1,20 @@
 {
-  "tag": "v0.1.0-beta.1",
-  "date": "2026-11-04",
-  "scope": "private-repository closed testing",
+  "tag": "v0.1.0-beta.2",
+  "date": "2026-11-17",
+  "scope": "public early beta; full existing runtime resources",
   "android": {
     "abi": "arm64-v8a",
     "min_api": 28,
     "application_id": "org.uncleed.app.beta",
+    "version_code": 2,
     "debuggable": false,
-    "sha256": "85f9cdbff7a07ebfc2f06e8a2e1b7205dbe5fc6ff9b981b0a88182d102dca72e",
+    "sha256": "6a0ac82e20ff77500aaae5ece650db1bf9bcf93ad8c9399303f12ed7214664fa",
     "physical_beta_revalidation": "pending"
   },
+  "runtime_resource_inventory_count": 905,
+  "appearance_overrides_required": false,
+  "owner_approved_publication": true,
+  "third_party_artwork_rights_independently_verified": false,
   "apple_installers": "pending exact corresponding core source and distribution signing",
-  "public_distribution_approved": false,
-  "roms_or_personal_saves_included": false,
-  "private_appearance_requested_by_owner": true
+  "roms_or_personal_saves_included": false
 }

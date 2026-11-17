@@ -1,0 +1,8 @@
+{
+  "3ds-0" : "gold-foil-print",
+  "basis" : "Visual treatment inferred from the supplied references; not a claim about the original manufacturing process.",
+  "default" : "silk-print",
+  "psp-0" : "fine-grey-etch-normal",
+  "psp-1" : "matte-ink-metal-inlays",
+  "psp-2" : "silk-on-gloss"
+}

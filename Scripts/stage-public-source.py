@@ -26,7 +26,7 @@ for entry in roots:
   parts=set(rel.parts[:-1]);skip=parts&SKIP_DIRS
   if rel.parts[:2]==('Sources','Vendor'):skip.discard('Vendor')
   if skip or file.name in SKIP_FILES or file.suffix in {'.log','.pyc','.apk','.ipa','.so','.dylib','.a','.jar','.aar'}:continue
-  if file.suffix.lower() in ASSET_SUFFIX and registry.get(str(rel),{}).get('status')!='approved':omitted.append(str(rel));continue
+  if file.suffix.lower() in ASSET_SUFFIX and registry.get(str(rel),{}).get('status') not in {'approved','owner-authorized'}:omitted.append(str(rel));continue
   files.append((file,rel))
 dest.mkdir(parents=True)
 for file,rel in files:

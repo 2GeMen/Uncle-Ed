@@ -1,0 +1,48 @@
+{
+  "private_only": true,
+  "defines": [
+    "UNCLEED_ANDROID_EXPORT"
+  ],
+  "sources": {
+    "Mobile/Sources/Rendering/SpatialMachine.swift": "0392cf2d874c4977e131eb8d65f884d2392289e373624e99121c48b8c4a1c273",
+    "Mobile/Sources/Domain/PickerMotion.swift": "49471ed00b73b7d013721f7c4d1c50d875b8e1d5e094afc234797e90b690459f",
+    "Scripts/export-android-gltf.swift": "4d5d40de18babfde4508224516a037de6c5d06311fde1454861ab06320c9315b",
+    "Scripts/AndroidRimExport.swift": "b0fc6b5e0df914340a2c7b2c7a3d9b3a9746bbe5557b0a20163bd586d4e2a2c0"
+  },
+  "psp_cap_single_mesh_verified": true,
+  "models": {
+    "3ds-0.glb": "6dd8909ea82c2f06c04a8b98c65a257023ab2e0c9ee485245bee4aab2f618414",
+    "3ds-1.glb": "27591d6caeec6c2c1b9ac8c6f16a37d3666e8a01e6ba2bb7cc15b4673ceddeb7",
+    "3ds-2.glb": "d317898b552eeb5aabf67dbab3c0b8cfbead9b712ca4682a050de1ad242c5177",
+    "3ds-3.glb": "b6aa08d6827d9dd639b333d43a123c968e3c2dccb139c420528875bb38da5701",
+    "3ds-open-0.glb": "1178cf1d8c4ac46526532ff3aaebfdc66f64cf56af4a71bf6e208e6b7641cff6",
+    "3ds-open-1.glb": "c74cef1f907f1b44ebfc4e1021f2c84a4505481177fcf1865162636a86167599",
+    "3ds-open-2.glb": "1cb38af75419773927b258958bcecfd2203d1de5ecbce270a1aaa34d8079b326",
+    "3ds-open-3.glb": "cd99fb3e996bda999f4389798dc2f4355bf6f83efa4321179c6c444a6648314f",
+    "gba-0.glb": "665037ec2cd3ee4437c1421f079ed846b6fb04d4023543ee7923210d066d7e39",
+    "gba-1.glb": "18035900da31b2ddd0f7eae712eb029f14065b9fad5a2318d5f70ad56d24fa98",
+    "gba-2.glb": "cb8b113c94ba355deb25854172c17cbc86c64d33be30fdd6b0838bd7bf9316e4",
+    "gba-3.glb": "c45c5d2758db083ed6557cc633130c42fa44fd28199446581ae53a992c14c704",
+    "gbc-0.glb": "e2fce235424e0a7da70beb684fc3787ad9ea504b14138be088d6cd2341fa1711",
+    "gbc-1.glb": "65eb5cb59673f42703f7fad26b14f1b5b230c0eeb1917e9b33b3d1cdf54275e5",
+    "gbc-2.glb": "2ee50a9849cc11d5f776129cb4fcf3599edbb517b262b4b9860cabca745a59e6",
+    "gbc-3.glb": "ac9248f8c03529307569cc7829017043e37f92ed5b078a30f2159e6fd86caafc",
+    "media-3ds.glb": "660467358d61313b6e45d40592f6f28d55027cbfb21933b1735ddbed8310dafb",
+    "media-gba.glb": "9967da793e4e6740b9f86e73a07ce74db5495963278c39b1535a2ea474f8176c",
+    "media-gbc.glb": "1ec77970f4335a9d52eab2a62d730a6f94fcb9c30ca6e8581f4756c146431aac",
+    "media-nds.glb": "5357ad1265ac8900cbd1201ddba89fe0056f9e60bb6da3e519a44e342832ce97",
+    "media-psp.glb": "c25eabcd64086bce75efb4693940ce1fcc201e79922501b99c61cab990a02d0a",
+    "nds-0.glb": "e3b98e77778e43ce5a9d77660d06b88a7dd63106599ff99b119383830169262e",
+    "nds-1.glb": "53da1105d01767eeac1076fac07a74717533e5bf94b5712daab3c5d8b7069db2",
+    "nds-2.glb": "39000881f0ce06876696d38305ad93d624932ce1fbf6f2b39d3ff544380f4776",
+    "nds-3.glb": "3054709d5f6fb16392ad8bff046d0aa9ba1f78365b294406e0a471dcc5ee8f78",
+    "nds-open-0.glb": "c9a3e415cca4953a4cb68f492d1eaa47191c6193f8bac1685e5d1795be0448e9",
+    "nds-open-1.glb": "81517040b2b848339c90edd1ff0912149910105b8b649ee6da7b76943230da37",
+    "nds-open-2.glb": "b6a901bea94e09b9b11e74087f0e11cb32652949930ccecd351c2706ff0497bd",
+    "nds-open-3.glb": "b6c6d27f8fe34319e2e8e21e65fbbf9edc549793d537d28635d6a5e45944d795",
+    "psp-0.glb": "4440ff6f23814577b93c1316692bbe0c70d399196a60aa32e16e2fd2d689cf5e",
+    "psp-1.glb": "cb2745b0950afd0c001e2d5655d717179f5453f9214dd599bea49494df2112f6",
+    "psp-2.glb": "6deca37ef8e3001865ae26f5b084886a5351593222a986acc94f31581f004978",
+    "psp-3.glb": "51a728866c0a177aa655f95fdf2677ec44b3ca5e803619eaf8885efa3d7954ad"
+  }
+}

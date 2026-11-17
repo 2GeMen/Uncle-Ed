@@ -20,4 +20,22 @@ class DistributionAuditTests(unittest.TestCase):
    self.assertEqual(m.audit(d),[]);p.write_bytes(b'changed');self.assertTrue(m.audit(d))
  def test_unready_release_is_blocked(self):
   with tempfile.TemporaryDirectory() as d:self.assertTrue(m.audit(d,True))
+ def test_owner_authorized_cover_requires_exact_hash(self):
+  with tempfile.TemporaryDirectory() as d:
+   r=Path(d);(r/'Shared').mkdir();(r/'Assets/Covers').mkdir(parents=True)
+   p=r/'Assets/Covers/example.png';p.write_bytes(b'illustration')
+   registry={'assets':{'Assets/Covers/example.png':{'status':'owner-authorized','license':'LicenseRef-ThirdParty-Rights-Retained','rights_verified':False,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}}}
+   (r/'Shared/asset-provenance.json').write_text(json.dumps(registry))
+   self.assertEqual(m.audit(d),[])
+   p.write_bytes(b'new unregistered cover');self.assertTrue(m.audit(d))
+ def test_resource_authorization_never_allows_rom_or_key(self):
+  with tempfile.TemporaryDirectory() as d:
+   r=Path(d);(r/'Shared').mkdir();entries={}
+   for name in ['game.gba','signing.p12']:
+    p=r/name;p.write_bytes(b'private')
+    entries[name]={'status':'owner-authorized','license':'LicenseRef-Test','sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
+   (r/'Shared/asset-provenance.json').write_text(json.dumps({'assets':entries}))
+   findings=m.audit(d)
+   self.assertTrue(any(p=='game.gba' and 'private/game' in reason for p,reason in findings))
+   self.assertTrue(any(p=='signing.p12' and 'credential' in reason for p,reason in findings))
 if __name__=='__main__':unittest.main()

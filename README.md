@@ -1,5 +1,7 @@
 # Uncle Ed.
 
+<img src="Assets/Branding/UncleED-Icon.png" alt="Uncle Ed. original application icon" width="128">
+
 经典再次上场。A tactile, three-dimensional handheld-emulation frontend for
 rediscovering games you already own.
 
@@ -59,3 +61,18 @@ Self-authored source: **GPL-3.0-or-later**, see [LICENSE](LICENSE).
 The author's personal learning / non-commercial intent adds no restriction to
 GPL recipients. Dependencies retain their licenses and notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Artwork is separately licensed.
+
+## Original app icon restored (2026-11-17)
+
+The original icon is now tracked in Assets/Branding, the native iOS AppIcon
+catalog and Android's default main resources (five legacy densities, adaptive
+launcher icon and splash). The six synthesized mechanical audio resources are
+also included. Default source builds no longer need a private icon directory.
+The existing beta.1 APK already contained the original icon; it was omitted from
+the clean source export, not from that downloaded app.
+
+Other model/theme resource restoration has been prepared and built locally,
+but its full public upload is awaiting explicit confirmation following an
+automatic approval rejection. This icon/audio update does not claim complete
+appearance parity for a source checkout. ROMs, personal saves and signing keys
+remain excluded. See LICENSES/PROJECT-BRANDING-AUDIO.md.

@@ -1,1 +1,153 @@
-{"schema":1,"assets":{},"policy":"No blanket relicensing of game covers, character prints, reference photographs or commercial recordings. Each shipped asset needs a verified license and content hash."}
+{
+  "schema": 2,
+  "assets": {
+    "Assets/Branding/UncleED.icns": {
+      "status": "approved",
+      "sha256": "4de42576d84eafdf879638f4e967483c15038afe0ba3173d021a7363dd36adf5",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Assets/Branding/UncleED-Icon.png": {
+      "status": "approved",
+      "sha256": "f44568f81c9e3a9c685fa837eec006ac9202b6e8dbbadc086d8eded935ad4427",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Assets/Branding/macOS-Info.plist": {
+      "status": "approved",
+      "sha256": "d87ef78e044a14534086d0fafb63ac948f526dfdb6ce18256df3e94d73c0e9be",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Assets/Sounds/psp-door-close.wav": {
+      "status": "approved",
+      "sha256": "f66b2a3147faa1d79e0de46d18cdfe20e54ab1618861dc2133e20dcc8f32820f",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Assets/Sounds/psp-disc-seat.wav": {
+      "status": "approved",
+      "sha256": "b9b792e697fab517da42b581b09cf61f4477245eb33ab9278815517d68f9186c",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Assets/Sounds/media-latch.wav": {
+      "status": "approved",
+      "sha256": "34f9acdf9e572e078131625d873278ed2ff5ebb41194a1cc56c63f0245eab0b3",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Assets/Sounds/media-slide.wav": {
+      "status": "approved",
+      "sha256": "865a21d637988f6cced7eb6e33f7c894968304648156453bcf2be3efe37bdaad",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Assets/Sounds/psp-door-open.wav": {
+      "status": "approved",
+      "sha256": "a276c4aeb792e2590b0b8aeb685be483add3337f13dabacf5d65206a668c0487",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Assets/Sounds/psp-disc-read.wav": {
+      "status": "approved",
+      "sha256": "cc914b2b825995639e64bd4a9f78954ba509c317133c6443fdafd290cf63c76e",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/mipmap-mdpi/ic_launcher.png": {
+      "status": "approved",
+      "sha256": "b8aa209a5427852f5c234b0fc440f852ecb8f7b6a8eef2d49bd200b160ba2104",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/mipmap-hdpi/ic_launcher.png": {
+      "status": "approved",
+      "sha256": "74347711d493995c165f6d1c6f0140b07b620889f6e0015f54a1762adba4bd25",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+      "status": "approved",
+      "sha256": "955e3bc61b8eee4e08e3cb65e4b122cc7675ab02e25554d6c9ac58d0921f07fa",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+      "status": "approved",
+      "sha256": "f98fbbdedc86e8b319004bbca74104a1d0cd24c2ca56e12bf57d1a28c4e26236",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/values/icon-colors.xml": {
+      "status": "approved",
+      "sha256": "464e9c60979437ab02471649709d5f5964561ce8f8102be54d48e90301d0c316",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/values/styles.xml": {
+      "status": "approved",
+      "sha256": "9a285668450d7e2f8f463dea8a04dbd93e0f3b8b2b2e218880c9de1e20a119e6",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/drawable-nodpi/uncleed_splash.png": {
+      "status": "approved",
+      "sha256": "f44568f81c9e3a9c685fa837eec006ac9202b6e8dbbadc086d8eded935ad4427",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+      "status": "approved",
+      "sha256": "07dbe88cd9e1b1a78929a2aeb0ebcfdcec7f2df19bdc7381877fccb9a96dbba8",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/values-v31/styles.xml": {
+      "status": "approved",
+      "sha256": "4c580a531b258b3b66c043d0e2cc96e2e19b9f88df8300c0bd2bbf465ea03904",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
+      "status": "approved",
+      "sha256": "42ac5e09b7f432b87c98d96f09e5b3d9a2359d121a37dd7df2de8060819130a1",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Mobile/Resources/Images.xcassets/AppIcon.appiconset/Icon.png": {
+      "status": "approved",
+      "sha256": "45a0cf1495ed14f07fd292a5678f70aff5fac8f65468628e57ceecea313f1c8c",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    },
+    "Mobile/Resources/Images.xcassets/AppIcon.appiconset/Contents.json": {
+      "status": "approved",
+      "sha256": "c2afcae7d0173ba2befd08f9cf02d59d7041bd9cbe8a1c0b60383c06de93a226",
+      "license": "LicenseRef-UncleEd-Project-Branding-Audio",
+      "source": "Existing original project icon, its platform derivatives, or synthesized mechanical audio.",
+      "publication_authority": "Project owner explicitly requested the original icon be present in public source builds and downloaded applications on 2026-11-17."
+    }
+  },
+  "policy": "This update includes original project branding and synthesized mechanical audio only. It grants no blanket approval for third-party artwork, ROMs, saves or credentials."
+}

@@ -3,6 +3,8 @@ set -eu
 cd -- "$(dirname -- "$0")"
 python3 Scripts/check-shared-visuals.py
 mkdir -p Build
+mkdir -p 'Uncle Ed.app/Contents/MacOS'
+cp Assets/Branding/macOS-Info.plist 'Uncle Ed.app/Contents/Info.plist'
 BUILD_CACHE="$(pwd)/Build/ModuleCache"
 mkdir -p "$BUILD_CACHE"
 xcrun clang -O2 -c Sources/Hardware.c -ISources -ISources/Vendor -o Build/Hardware.o -Wno-deprecated-declarations

@@ -31,3 +31,15 @@ Apple installers still require exact core provenance and distribution signing.
 
 See UPSTREAM.md, THIRD_PARTY_NOTICES.md and the Release installation/known-issues
 notes for source attribution and the actual tested scope.
+
+## Complete presentation-resource restoration · 2026-11-17
+
+After the initial broad restoration request was rejected by automatic approval,
+the owner explicitly confirmed: “一并公开发布现有展示资源。” This confirmation
+followed an explanation covering third-party themes, cover illustrations, console
+marks and model prints, unverified rights, and irreversible copying/publicity.
+The original icon/audio fix is merged with the full resource restoration.
+All 905 inventoried runtime resources are included in the source and beta.2
+build inputs. This records the owner's publication instruction, not a license
+grant from third-party rights holders. ROMs, personal data and signing keys remain
+excluded. See Shared/resource-publication-authorization.json and Docs/RESOURCE-PARITY.md.

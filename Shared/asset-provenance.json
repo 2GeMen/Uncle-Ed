@@ -6337,5 +6337,10 @@
       "rights_verified": false
     }
   },
-  "policy": "Owner-authorized publication and verified open-source licensing are distinct. Third-party rights are retained, not relicensed. ROMs, personal data and signing credentials remain excluded."
+  "policy": "Owner-authorized publication and verified open-source licensing are distinct. Third-party rights are retained, not relicensed. ROMs, personal data and signing credentials remain excluded.",
+  "explicit_publication_confirmation": {
+    "date": "2026-11-17",
+    "user_request": "一并公开发布现有展示资源。",
+    "scope": "Existing third-party theme prints, cover illustrations, console marks, model artwork and original project runtime presentation resources; excludes ROMs, personal saves and signing credentials."
+  }
 }

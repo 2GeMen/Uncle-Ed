@@ -41,3 +41,8 @@ owner-authorized third-party artwork whose redistribution rights have not been
 independently established. Inclusion is not a blanket GPL relicense of third-party
 prints, marks or game illustrations. The audit still rejects ROMs, personal saves,
 credentials, arbitrary cover-cache files and unregistered/hash-changed artwork.
+
+The owner gave explicit public-publication confirmation for the complete existing
+presentation-resource inventory on 2026-11-17 after the initial automatic-review
+rejection. See Shared/resource-publication-authorization.json. This confirmation
+is distinct from independently verified third-party licensing.

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-17",
+  "request": "一并公开发布现有展示资源。",
+  "scope": "All 905 inventoried existing runtime presentation resources, including third-party themes, cover art, console marks and model textures.",
+  "prior_automatic_review_rejection": "Previous broad restore request was considered insufficiently explicit for public disclosure of third-party content.",
+  "new_confirmation": "User explicitly confirmed public publication after being told that third-party rights were not verified and disclosure may be copied and difficult to reverse.",
+  "not_a_third_party_license_grant": true,
+  "excluded": [
+    "ROMs and disc images",
+    "personal saves and save states",
+    "signing keys and credentials"
+  ]
+}

@@ -1,5 +1,8 @@
 # Uncle Ed.
 
+> **[锈客 · Rusted Drifter](https://xiuke.net/)** · **[口搓铺](https://xiuke.net/projects/)**  
+> 手艺生了锈，在 AI 时代重新上手。
+
 <img src="Assets/Branding/UncleED-Icon.png" alt="Uncle Ed. original app icon" width="128">
 
 经典再次上场。A tactile, three-dimensional handheld-emulation frontend for
